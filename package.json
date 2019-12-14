@@ -1,0 +1,42 @@
+{
+  "name": "@ciphercore/crypto-encoder",
+  "version": "0.0.1",
+  "description": "placeholder",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "bin",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "tape test/*.js",
+    "debug": "node inspect $(npm bin)/tape test/*.js",
+    "lint": "standard",
+    "jsdoc": "jsdoc -d docs/ .",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "sodium-universal": "^2.0.0"
+  },
+  "devDependencies": {
+    "hypercore": "^8.3.0",
+    "jsdoc": "^3.6.3",
+    "random-access-memory": "^3.1.1",
+    "standard": "^14.3.1",
+    "tape": "^4.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telamon/crypto-encoder.git"
+  },
+  "keywords": ["abstract-encoding", "xsalsa20", "ciphercore", "crypto-encoder"],
+  "author": {
+    "name": "Tony Ivanov",
+    "email": "telamohn@pm.me"
+  },
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/telamon/crypto-encoder/issues"
+  },
+  "homepage": "https://github.com/telamon/crypto-encoder#readme"
+}
