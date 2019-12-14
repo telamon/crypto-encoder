@@ -13,12 +13,20 @@ npm install crypto-encoder
 ```
 
 ## <a name="usage"></a> Usage
-
+Example using the crypto-encoder to encrypt the contents of a hypercore.
 ```js
+const ram = require('random-access-memory')
+const hypercore = require('hypercore')
 const CryptoEncoder = require('crypto-encoder')
+const crypto = require('crypto')
 
-const codec = new
+const secret = crypto.randomBytes(32)
 
+const feed = hypercore(ram, {
+  contenEncoding: new CryptoEncoder(secret, 'json')
+})
+
+feed.append({ aMessage: 'this entire block will be encrypted' })
 ```
 
 Similar projects:

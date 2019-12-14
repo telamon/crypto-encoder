@@ -1,5 +1,5 @@
 {
-  "name": "@ciphercore/crypto-encoder",
+  "name": "crypto-encoder",
   "version": "0.0.1",
   "description": "placeholder",
   "main": "index.js",
@@ -29,7 +29,12 @@
     "type": "git",
     "url": "git+https://github.com/telamon/crypto-encoder.git"
   },
-  "keywords": ["abstract-encoding", "xsalsa20", "ciphercore", "crypto-encoder"],
+  "keywords": [
+    "abstract-encoding",
+    "xsalsa20",
+    "ciphercore",
+    "crypto-encoder"
+  ],
   "author": {
     "name": "Tony Ivanov",
     "email": "telamohn@pm.me"
